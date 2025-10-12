@@ -6,6 +6,7 @@ o.relativenumber = true
 o.shiftwidth = 4
 o.tabstop = 4
 o.termguicolors = true
+o.showmode = false
 
 o.background=dark
 vim.cmd.colorscheme('gruvbox')

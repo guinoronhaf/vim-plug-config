@@ -23,6 +23,7 @@ Plug('ibhagwan/fzf-lua')
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('AlexvZyl/nordic.nvim', { ['branch'] = 'main' })
 Plug('ellisonleao/gruvbox.nvim')
+Plug('numToStr/FTerm.nvim')
 
 vim.call('plug#end')
 

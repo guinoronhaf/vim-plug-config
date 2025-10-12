@@ -28,3 +28,7 @@ map("n", "<leader>e", "<Cmd>NvimTreeFocus<CR>", opts)
 -- fzf-lua mappings
 map("n", "<leader>ff", "<Cmd>FzfLua files<CR>", opts)
 map("n", "<leader>fg", "<Cmd>FzfLua live_grep<CR>", opts)
+
+-- FTerm mappings
+vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
