@@ -17,6 +17,8 @@ map("n", "vg", "<Cmd>normal!ggVG<CR>")
 -- barbar mappings
 map("n", "<Tab>", "<Cmd>BufferNext<CR>", opts)
 map("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", opts)
+map("n", "[b", "<Cmd>BufferMovePrevious<CR>", opts)
+map("n", "]b", "<Cmd>BufferMoveNext<CR>", opts)
 map("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
 
 -- nvim-tree mappings
