@@ -14,6 +14,10 @@ map("n", "<leader>h", "<Cmd>nohlsearch<CR>", opts)
 
 map("n", "vg", "<Cmd>normal!ggVG<CR>")
 
+map("i", "syso", "System.out.println()<Left>", opts)
+
+map("x", "ss", ":s/")
+
 -- barbar mappings
 map("n", "<Tab>", "<Cmd>BufferNext<CR>", opts)
 map("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", opts)

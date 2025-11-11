@@ -22,9 +22,26 @@ require("nvim-tree").setup {
     },
     renderer = {
       group_empty = true,
+	  icons = {
+		  glyphs = {
+			  git = {
+				  unstaged = "✗",
+				  staged = "✓",
+				  unmerged = "",
+				  renamed = "➜",
+				  untracked = "★",
+				  deleted = "",
+				  ignored = "◌",
+			  },
+		  },
+	  },
     },
     filters = {
-      dotfiles = true,
+      dotfiles = false,
     },
+	git = {
+		enable = true,
+		ignore = false,
+	},
 	on_attach = my_on_attach,
 }
