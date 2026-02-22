@@ -14,7 +14,8 @@ Plug('tpope/vim-sensible')
 Plug('nvim-tree/nvim-web-devicons')
 Plug('nvim-lualine/lualine.nvim')
 Plug('romgrk/barbar.nvim')
-Plug('nvim-treesitter/nvim-treesitter')
+-- it was necessary to fix a commit for nvim-treesitter (at branch master) because the latest update was broken on my nvim :(
+Plug('nvim-treesitter/nvim-treesitter', { ['branch'] = 'master', ['commit'] = '42fc28b', ['do'] = ':TSUpdate' })
 Plug('nvim-tree/nvim-tree.lua')
 Plug('windwp/nvim-autopairs')
 Plug('lewis6991/gitsigns.nvim')
@@ -24,6 +25,7 @@ Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('AlexvZyl/nordic.nvim', { ['branch'] = 'main' })
 Plug('ellisonleao/gruvbox.nvim')
 Plug('numToStr/FTerm.nvim')
+Plug('Mofiqul/vscode.nvim')
 
 vim.call('plug#end')
 

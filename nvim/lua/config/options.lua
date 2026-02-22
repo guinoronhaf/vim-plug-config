@@ -10,4 +10,4 @@ o.showmode = false
 o.cursorline = true
 
 o.background=dark
-vim.cmd.colorscheme('gruvbox')
+vim.cmd.colorscheme('vscode')
