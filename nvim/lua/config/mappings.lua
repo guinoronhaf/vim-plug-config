@@ -16,6 +16,8 @@ map("n", "vg", "<Cmd>normal!ggVG<CR>")
 
 map("i", "syso", "System.out.println()<Left>", opts)
 
+map("i", "!b", "#!/bin/bash", opts)
+
 map("x", "ss", ":s/")
 
 -- barbar mappings
@@ -24,6 +26,7 @@ map("n", "<S-Tab>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "[b", "<Cmd>BufferMovePrevious<CR>", opts)
 map("n", "]b", "<Cmd>BufferMoveNext<CR>", opts)
 map("n", "<leader>x", "<Cmd>BufferClose<CR>", opts)
+map("n", "T", "<Cmd>BufferPick<CR>", opts)
 
 -- nvim-tree mappings
 map("n", "<C-n>", "<Cmd>NvimTreeToggle<CR>", opts)
