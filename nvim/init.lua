@@ -24,6 +24,7 @@ Plug('ibhagwan/fzf-lua')
 Plug('MeanderingProgrammer/render-markdown.nvim')
 Plug('AlexvZyl/nordic.nvim', { ['branch'] = 'main' })
 Plug('ellisonleao/gruvbox.nvim')
+Plug('uhs-robert/oasis.nvim')
 Plug('numToStr/FTerm.nvim')
 Plug('Mofiqul/vscode.nvim')
 
@@ -41,3 +42,7 @@ require("plugins.gitsigns")
 require("plugins.comment")
 require("plugins.fzf-lua")
 require("plugins.nordic")
+require("plugins.oasis")
+
+-- alterei as configs do oasis pra tirar aquele amarelo. Pra isso, preciso recarregar o tema toda vez que o nvim inicia
+vim.cmd[[colorscheme oasis-cactus]]

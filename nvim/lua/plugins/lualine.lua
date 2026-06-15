@@ -40,6 +40,7 @@ require('lualine').setup {
 		function()
 			return vim.loop.os_uname().sysname
 		end,
+		"os.date('%H:%M')"
 	},
     lualine_z = {'location'}
   },

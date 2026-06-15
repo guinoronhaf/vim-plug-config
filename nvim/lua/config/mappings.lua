@@ -14,6 +14,8 @@ map("n", "<leader>h", "<Cmd>nohlsearch<CR>", opts)
 
 map("n", "vg", "<Cmd>normal!ggVG<CR>")
 
+map("n", "<C-f>", "/", opts)
+
 map("i", "syso", "System.out.println()<Left>", opts)
 
 map("i", "!b", "#!/bin/bash", opts)
