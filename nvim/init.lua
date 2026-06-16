@@ -27,6 +27,15 @@ Plug('ellisonleao/gruvbox.nvim')
 Plug('uhs-robert/oasis.nvim')
 Plug('numToStr/FTerm.nvim')
 Plug('Mofiqul/vscode.nvim')
+-- lsp
+Plug('neovim/nvim-lspconfig')
+-- nvim-cmp
+Plug('hrsh7th/nvim-cmp')
+Plug('hrsh7th/cmp-nvim-lsp')
+Plug('hrsh7th/cmp-buffer')
+Plug('hrsh7th/cmp-path')
+Plug('hrsh7th/cmp-vsnip')
+Plug('hrsh7th/vim-vsnip')
 
 vim.call('plug#end')
 
@@ -43,6 +52,11 @@ require("plugins.comment")
 require("plugins.fzf-lua")
 require("plugins.nordic")
 require("plugins.oasis")
+require("plugins.nvim-cmp")
+require("plugins.lsp")
 
 -- alterei as configs do oasis pra tirar aquele amarelo. Pra isso, preciso recarregar o tema toda vez que o nvim inicia
 vim.cmd[[colorscheme oasis-cactus]]
+
+-- lsp
+vim.lsp.enable('pyright')
